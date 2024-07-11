@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscape</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=3d|fire|fire-animation|emboss|shadow-multiple"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Indie+Flower|Pacifico|Kaushan+Script">
+    
+    <script src="https://kit.fontawesome.com/4d4dcbc509.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    #head {
+            margin-left: 180px;
+            border: 0px solid black;
+            width: 100%;
+            height:auto;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+          background-color: rgb(234, 233, 233);
+          background-image: url(https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #logo{
+            
+            margin-left: 5px;
+            border: 0px solid black;
+            padding: 1px;
+            width: 100px;
+            height:90%;
+
+        }
+        #search{
+            border: 0px solid black;
+            height:40px;
+            width: 800px;
+            margin-top: 10px;
+            margin-right: 25px;
+            
+        }
+        #search>button{
+            background-color: blue;
+            color: white;
+            height: 5vh;
+            width: 5vh;
+            margin-left: -4px;
+        }
+        #loc{
+            height:40px;
+            width: 200px;
+            margin-right: -180px;
+      
+        }
+        #loc>button{
+            background-color: aliceblue;
+            border: none;
+            margin-top: 11px;
+           
+        }
+        
+        #login{
+            border: 0px solid black;
+            background-color: black;
+            height:40px;
+            width: 150px;
+            margin-top: 10px;
+           
+            
+        }
+        #login>h5{
+            text-align: center;
+            margin-top:10px;
+            color: white;
+            font-family: "Sofia", sans-serif; 
+        }
+        #log2{
+            margin-top: 10px;
+          
+            border: 0px solid black;
+            width: 50px;
+            height:40px;
+
+        }
+        #log2 >img{
+            width: 100%;
+            height: 100%;
+        }
+        #nav{
+            border: 0px solid red;
+            width: 100%;
+            height: 90px;
+            position: sticky;
+            top: 1px;
+            display: flex;
+            
+            
+}
+
+#bars{
+    border: 0px solid black;
+    width: 100%;
+    height: 70px;
+    
+    margin-top:-2vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    font-size: 3vh;
+    background-color: rgb(234, 233, 233);
+   
+    
+}
+#bars>a{
+    
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-family: "Sofia", sans-serif; 
+}
+a:hover{
+    color:#ffc836;
+}
+    #carosol{
+        width: 90%;
+        height: 60vh;
+        border: 0px solid black;
+        margin: auto;
+        background-image: url(https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        font-family: "Indie Flower", cursive; 
+        
+    } 
+   
+    #products{
+        height: auto;
+        width: 90%;
+        border: 0px solid black;
+        margin-top: 3vh;
+        margin-left: 10vh;
+        display: grid;
+        grid-template-columns: repeat(3,370px);
+        grid-template-rows: repeat(2,380px);
+        justify-content: space-evenly;
+        gap: 20px;
+        
+        
+    } 
+    .pizza{
+        border: 0px solid black;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        
+    }   
+    #vegie{
+        height: 40%;
+        width: 100%;
+        background-image: url(https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/menu/ae395297-1fd7-4141-b6b1-967dcf86ae34_Veggie-Buddies-Customize.jpg);
+        background-size: cover;
+    }
+    #price{
+        height: 6vh;
+        width:10vh;
+        padding-top: 100px;
+        padding-left: 6px;
+        border: 0px solid black;
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        text-shadow: 7px 2px 2px rgba(36, 33, 34, 1),0px 1px 5px rgba(16, 93, 97, 1);
+    }
+    #descr{
+        height: auto;
+        width: auto;
+        border: 0px solid black;;
+        padding-left: 15px;
+    }
+    #opt{
+        margin-left: 1vh;
+        margin-top: -1vh;
+    }
+    #vegie1{
+        height: 40%;
+        width: 100%;
+        background-image: url(https://images.unsplash.com/photo-1589187151053-5ec8818e661b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdpZGUlMjBhbmdsZSUyMHBpenphfGVufDB8fDB8fHww);
+        background-size: cover;
+    }
+    #vegie2{
+        height: 40%;
+        width: 100%;
+        background-image: url(https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdpZGUlMjBhbmdsZSUyMHBpenphfGVufDB8fDB8fHww);
+        background-size: cover;
+    }
+    #vegie3{
+        height: 40%;
+        width: 100%;
+        background-image: url(https://media.istockphoto.com/id/858622768/photo/pizza-to-order-pizza-in-a-cardboard-box.jpg?s=612x612&w=0&k=20&c=_bkccwvyf_Q62RZdLMBH-GSfjHjcX-iDU5e3fJBlwrU=);
+        background-size: cover;
+    }
+    #vegie4{
+        height: 40%;
+        width: 100%;
+        background-image: url(https://media.istockphoto.com/id/1410100585/photo/close-up-image-of-freshly-baked-homemade-chicken-pizza-in-frying-pan-on-wooden-chopping-board.jpg?s=2048x2048&w=is&k=20&c=TsMn7RnZSXHWN4vYNcSKepqS9IGrlbRMaTP7Yr13IqQ=);
+        background-size: cover;
+    }
+    #vegie5{
+        height: 40%;
+        width: 100%;
+        background-image: url(https://media.istockphoto.com/id/1184514003/photo/delicious-pizza.jpg?s=2048x2048&w=is&k=20&c=PRQDZwys-tuVPsT5JMgaRgI2xKbjjnK80aOKEkQpVM4=);
+        background-size: cover;
+    }
+    #vedio{
+        height: 60vh;
+        width: 90%;
+        margin-left: 10vh;
+        margin-top: 3vh;
+        border:1px solid black;
+
+    }
+    #footer{
+        width: 100%;
+        height: 10vh;
+        border: 0px solid black;
+        margin-top: 3vh;
+        
+        background-color: aliceblue;
+        background-image: url(https://images.unsplash.com/photo-1593504049359-74330189a345?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGl6emF8ZW58MHx8MHx8fDA%3D);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+    .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    text-decoration: none;
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+    text-decoration: none;
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+    text-decoration: none;
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+    text-decoration: none;
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+    text-decoration: none;
+  background: #125688;
+  color: white;
+  
+}
+h2{
+    font-family: "Kaushan Script", cursive; 
+}
+
+    
+   
+</style>
+<body>
+    <div id="head">
+        <div id="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2kbkxHM8O55_YsYU_DvsM0aWc2ETVo_e3eA&usqp=CAU" alt="" height="100%" width="100%">
+
+        </div>
+        <div id="search">
+            
+            <input type="text" placeholder= "Search for Products" style="height: 84%; width: 80%; margin-left: 50px;">
+            <button type="submit"><i class="fa fa-search"></i></button>
+           
+        </div>
+        
+        <div id="login">
+            <h5>Login/Sign Up</h>
+        </div>
+        <div id="loc">
+            <button style='font-size:24px'><i class='fas fa-location-arrow' style='font-size:38px;color:red'></i></button>
+
+        </div>
+        <div id="log2">
+            <button> <i class="fa fa-shopping-cart" style="font-size:38px;color:red;border:none" ></i></button>
+        </div>
+       
+
+    </div>
+    <div id="nav">
+        
+        <div id="bars">
+            <a href="">Home &nbsp;&nbsp;|</a>
+            <a href="">About Us</i>&nbsp;&nbsp;|</a>
+            <a href="">Products<i class='fas fa-angle-down'></i>&nbsp;&nbsp;|</a>
+            <a href="">Pages<i class='fas fa-angle-down'></i>&nbsp;&nbsp;|</a>
+            <a href="">Contact Us &nbsp;<i class='fas fa-user'></i>&nbsp;&nbsp;</a>
+            
+        </div>
+    </div>    
+    <div id="carosol">
+        <h1 style="color: rgb(253, 241, 211); font-size: 65px;text-shadow: 6px 3px 2px rgba(36, 33, 34, 1); margin-left: 10px;">Pizza Made in Heaven...</h1>
+    </div>
+        <div id="products">
+               <div class="pizza">
+                <div id="vegie">
+                    <div id="price"><p>&#8377; 350</p></div>
+                    <div id="descr"><h2>VEGGIE BUDDIES</h2><p>Fresh gulf shrimp, baby spinach, Roma tomatoes,<br> artichoke hearts, garlic oil, and shredded mozarella <br>cheese & a no onion , no garlic sauce</p></div>
+                    <p style="opacity: 0.9;margin-left: 1vh;">size</p> 
+                    <div id="opt">
+                        <select name="" id="">
+                        <option value="">Small</option>
+                        <option value="">Medium</option>
+                        <option value="">Large</option>
+                    </select></div> 
+                    <button style="margin-left: 35vh; color:green; border-color: greenyellow;">Add to Cart</button>
+                </div>
+
+               </div>
+               <div class="pizza">
+                <div id="vegie1">
+                    <div id="price"><p>&#8377; 459</p></div>
+                    <div id="descr"><h2>THE SKINNY</h2><p>Best buddies Tomato and Capsicum<br> come together on your Fav Crust with <br>cheese & a onion garlic sauce</p></div>
+                    <p style="opacity: 0.9;margin-left: 1vh;">size</p> 
+                    <div id="opt">
+                        <select name="" id="">
+                        <option value="">Small</option>
+                        <option value="">Medium</option>
+                        <option value="">Large</option>
+                    </select></div> 
+                    <button style="margin-left: 35vh; color:green; border-color: greenyellow;">Add to Cart</button>
+                </div>
+
+               </div>
+               <div class="pizza">
+                <div id="vegie2">
+                    <div id="price"><p>&#8377; 599</p></div>
+                    <div id="descr"><h2>THE MEATS</h2><p>Pepperoni, Italian sausage, ham, <br> moked bacon, seasoned ground chicken, <br>house-made tomato sauce, and shredded mozzarella</p></div>
+                    <p style="opacity: 0.9;margin-left: 1vh;">size</p> 
+                    <div id="opt">
+                        <select name="" id="">
+                        <option value="">Small</option>
+                        <option value="">Medium</option>
+                        <option value="">Large</option>
+                    </select></div> 
+                    <button style="margin-left: 35vh; color:green; border-color: greenyellow;">Add to Cart</button>
+                </div>
+
+               </div>
+               <div class="pizza">
+                <div id="vegie3">
+                    <div id="price"><p>&#8377; 459</p></div>
+                    <div id="descr"><h2>CHEESY DELIGHT</h2><p>Olive oil and garlic glaze, mozzarella, <br>Roma tomatoes and our Parmesan-herb shake,<br> cooked then topped with fresh basil.</p></div>
+                    <p style="opacity: 0.9;margin-left: 1vh;">size</p> 
+                    <div id="opt">
+                        <select name="" id="">
+                        <option value="">Small</option>
+                        <option value="">Medium</option>
+                        <option value="">Large</option>
+                    </select></div> 
+                    <button style="margin-left: 35vh; color:green; border-color: greenyellow;">Add to Cart</button>
+                </div>
+
+               </div>
+               <div class="pizza">
+                <div id="vegie4">
+                    <div id="price"><p>&#8377; 499</p></div>
+                    <div id="descr"><h2>PIZZA OF THE GODS</h2><p>Olive oil and garlic glaze, mozzarella <br>and provolone cheese, Roma tomatoes, artichoke hearts and fresh mushrooms.</p></div>
+                    <p style="opacity: 0.9;margin-left: 1vh;">size</p> 
+                    <div id="opt">
+                        <select name="" id="">
+                        <option value="">Small</option>
+                        <option value="">Medium</option>
+                        <option value="">Large</option>
+                    </select></div> 
+                    <button style="margin-left: 35vh; color:green; border-color: greenyellow;">Add to Cart</button>
+                </div>
+
+               </div>
+               <div class="pizza">
+                <div id="vegie5">
+                    <div id="price"><p>&#8377; 499</p></div>
+                    <div id="descr"><h2>CHICKEN fOUNTAIN</h2><p>Pesto sauce, fresh spinach, mozzarella <br>and feta cheese, grilled chicken, <br>fresh mushrooms and roasted garlic.</p></div>
+                    <p style="opacity: 0.9;margin-left: 1vh;">size</p> 
+                    <div id="opt">
+                        <select name="" id="">
+                        <option value="">Small</option>
+                        <option value="">Medium</option>
+                        <option value="">Large</option>
+                    </select></div> 
+                    <button style="margin-left: 35vh; color:green; border-color: greenyellow;">Add to Cart</button>
+                </div>
+
+               </div>
+        </div>
+
+        <div id="vedio">
+            <iframe src="https://youtube.com/embed/T3AHBe0I0yc?si=qyagNUDuMyV9fWq_" height="100%" width="100%" allowfullscreen></iframe>
+        </div>
+        <div id="footer">
+            <p style="margin-left: 3vh;">Follow us @ <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a></p>
+                <h1 style="color: whitesmoke;margin-left: 50vh;">Come Back Soon...</h1>
+
+
+        </div>
+</body>
+</html>
